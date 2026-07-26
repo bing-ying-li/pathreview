@@ -20,12 +20,12 @@ I selected this issue because it is a Tier 1 issue with a limited and clearly de
 
 ## Week 8 — Reproduction & solution planning
 
-**Reproduction commit link:** [Paste the GitHub link to the reproduction commit here]
+**Reproduction commit link:** [\[Paste the GitHub link to the reproduction commit here\]](https://github.com/bing-ying-li/pathreview/blob/fix/68-safety-event-count-health-check/REPRODUCTION.md)
 
 **Reproduction summary:**
 I reproduced the issue by reviewing the pre-fix version of `api/routes/health.py`. The `safety_events_last_hour` field was initialized to `0` and was never updated using recent safety event data from Redis, causing the health endpoint to always report zero events.
 
-**PLAN.md link:** [Paste the GitHub link to PLAN.md here]
+**PLAN.md link:** [\[Paste the GitHub link to PLAN.md here\]](https://github.com/bing-ying-li/pathreview/blob/fix/68-safety-event-count-health-check/PLAN.md)
 
 **Walkthrough video (recommended):**
 Not recorded.
