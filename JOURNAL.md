@@ -17,3 +17,18 @@ I selected this issue because it is a Tier 1 issue with a limited and clearly de
 **Setup confirmation:** [x] App runs locally at localhost:5173
 
 **Cohort ledger:** [x] Issue added to cohort ledger
+
+## Week 8 — Reproduction & solution planning
+
+**Reproduction commit link:** [Paste the GitHub link to the reproduction commit here]
+
+**Reproduction summary:**
+I reproduced the issue by reviewing the pre-fix version of `api/routes/health.py`. The `safety_events_last_hour` field was initialized to `0` and was never updated using recent safety event data from Redis, causing the health endpoint to always report zero events.
+
+**PLAN.md link:** [Paste the GitHub link to PLAN.md here]
+
+**Walkthrough video (recommended):**
+Not recorded.
+
+**Blockers or open questions:**
+The repository currently has several unrelated failing unit tests. Testing for this issue will focus on `tests/unit/test_health.py` and `tests/unit/test_safety_monitoring.py`.
