@@ -28,7 +28,8 @@ I reproduced the issue by reviewing the pre-fix version of `api/routes/health.py
 **PLAN.md link:** [\[Paste the GitHub link to PLAN.md here\]](https://github.com/bing-ying-li/pathreview/blob/fix/68-safety-event-count-health-check/PLAN.md)
 
 **Walkthrough video (recommended):**
-Not recorded.
+
+<img src ="issue-68-reproduction.gif" width="500">
 
 **Blockers or open questions:**
 The repository currently has several unrelated failing unit tests. Testing for this issue will focus on `tests/unit/test_health.py` and `tests/unit/test_safety_monitoring.py`.
