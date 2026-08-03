@@ -53,7 +53,7 @@ GNU Make is not available in my Windows PowerShell environment, so I am running 
 
 ### Check-in 2 (end of week)
 
-**PR link:** [PASTE YOUR FINAL PULL REQUEST LINK HERE]
+**PR link:** https://github.com/ascherj/pathreview/pull/210
 
 **Branch:** `fix/68-safety-event-count-health-check`
 
