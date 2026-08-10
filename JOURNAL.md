@@ -81,3 +81,34 @@ The complete unit test suite produced 379 passing tests and 53 failures. The fai
 **Draft PR feedback received from:** The complete unit test suite produced 379 passing tests and 53 pre-existing
 failures. Running the same test suite against upstream/main confirmed that
 the failures were not introduced by this contribution.
+
+## Week 10 — Iteration & reflection
+
+### Reviewer feedback
+
+**Feedback received:** [ ] Yes [x] No — still awaiting review
+
+**Summary of feedback:**
+No reviewer feedback was provided for Summer 2026. My pull request is still available for review, but I did not receive any maintainer comments that required changes.
+
+**How you responded:**
+No changes were required because no reviewer feedback was provided.
+
+---
+
+### Reflection
+
+**What was harder than you expected?**
+The hardest part was understanding an existing codebase before making a small change. My issue sounded simple at first: add the number of recent safety events to the health-check response. However, I had to understand how the existing health check worked, where the safety monitoring logic was located, and how the different services such as PostgreSQL and Redis were already being checked. I also had to make sure my change fit the existing structure instead of adding unrelated logic. Another challenge was working with the development environment and tests because some existing tests were already failing for reasons unrelated to my issue, so I had to separate problems caused by my code from problems already in the repository.
+
+**What did you learn about working in a large codebase?**
+I learned that contributing to a large codebase is very different from building my own project. In my own project, I usually know where everything is and can change the structure whenever I want. In PathReview, I first had to understand the project's existing conventions and dependencies. Even a small change can affect other parts of the application, so it is important to keep the implementation focused and avoid unnecessary modifications. I also learned the importance of using a separate feature branch, checking the upstream repository, reviewing the diff before committing, and keeping the commit history related to the issue.
+
+**How did AI tools help — and where did they fall short?**
+AI tools were most helpful when I needed to understand unfamiliar code, interpret error messages, work through Git commands, and decide how to test my changes. They also helped me understand the purpose of parts of the health-check code and suggested ways to structure the implementation. However, AI could not fully understand the repository without me checking the actual files and running the code. Some suggestions had to be adjusted to match the real project structure. I still needed to run the tests, inspect Git output, check the branch and upstream repository, and verify that the final implementation actually worked in PathReview.
+
+**What would you do differently if you started over?**
+If I started again, I would spend more time exploring the repository and running the existing test suite before changing any code. This would give me a clearer baseline of which tests were already failing and make debugging easier later. I would also review the issue requirements and trace the relevant functions before beginning implementation instead of making changes while I was still learning how the project worked. I would keep my branch and commits more focused from the beginning so that the final pull request contained only changes directly related to the issue.
+
+**What are you most proud of from this module?**
+I am most proud that I was able to contribute to an unfamiliar existing project instead of only working on a project that I created myself. I worked through the repository setup, Git branching and upstream workflow, implementation, testing, documentation, and pull-request process. By the end of the module, I had a much better understanding of what an actual open-source contribution workflow looks like and felt more confident navigating a larger codebase.
